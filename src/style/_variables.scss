@@ -1,0 +1,26 @@
+$color-primary: #ff0084;
+$color-secondary: #3023b0;
+$color-white: #ff0084;
+
+:root {
+    --padding-mobile: 15px;
+    --padding-tiny: 0.4vw;
+    --padding-small: 0.8vw;
+    --padding-medium: 1.6vw;
+    --padding-large: 3.7vw;
+    --content-width: 82.5vw;
+}
+
+@media (max-width: 830px) {
+    :root {
+        --padding-small: 10px;
+        --padding-medium: 20px;
+        --padding-large: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --content-width: calc(96vw - var(--padding-mobile) * 2);
+    }
+}
